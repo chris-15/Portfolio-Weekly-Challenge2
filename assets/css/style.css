@@ -117,7 +117,7 @@ main h2 {
     display: flex;
     padding: 0px 75px 10px 30px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
     width: 75%;    
 }
 
@@ -144,6 +144,35 @@ main h2 {
 }*/
 
 .small-card img{
-    width: 20%;
+    width: 48%;
+    
+}
+/*work styling over*/
+
+/*contact me styling start*/
+.contact-me {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px 0px 0px;
+    align-items: center;
 }
 
+.title-contact {
+    border-right: 3px solid;
+    padding: 0px 10px 0px 0px;
+    text-align: right;
+    
+}
+
+.contact-list {
+    flex-wrap: wrap;
+    padding: 0px 75px 10px 30px ;
+    width: 75%;
+}
+
+.contact-list ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
