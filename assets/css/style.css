@@ -69,10 +69,35 @@ header nav ul li a {
 
 .hero-text{
     background: var(--secondary-color);
-    margin: 15px 45px;
+    margin: 15px 75px;
 }
 
-.hero .hero-text h1 {
+.hero .hero-text h2 {
     color: var(--primary-color);
     font-size: 40px;
+}
+/*end hero styling*/
+
+/*about me styling*/
+.about-me {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 75px 0px 0px;
+    
+}
+
+.title-aboutme {
+    border-right: 3px solid;
+    padding: 0px 10px 0px 200px;
+    text-align: right;
+    
+}
+
+.text-aboutme {
+    flex-wrap: wrap;
+    padding: 0px 0px 10px 30px ;
+}
+
+main h2 {
+    font-size: 50px;
 }
