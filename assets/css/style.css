@@ -78,26 +78,72 @@ header nav ul li a {
 }
 /*end hero styling*/
 
+main h2 {
+    font-size: 50px;
+}
+
 /*about me styling*/
 .about-me {
     display: flex;
     justify-content: flex-end;
-    padding: 20px 75px 0px 0px;
-    
+    padding: 20px 0px 0px 0px;
 }
 
 .title-aboutme {
     border-right: 3px solid;
-    padding: 0px 10px 0px 200px;
+    padding: 0px 10px 0px 0px;
     text-align: right;
     
 }
 
 .text-aboutme {
     flex-wrap: wrap;
-    padding: 0px 0px 10px 30px ;
+    padding: 0px 75px 10px 30px ;
+    width: 75%;
 }
 
-main h2 {
-    font-size: 50px;
+
+
+/*work styling*/
+
+.work {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px 0px 0px;
+    
 }
+
+.work-image-container {
+    display: flex;
+    padding: 0px 75px 10px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;    
+}
+
+.title-work {
+    border-right: 3px solid;
+    padding: 0px 10px 0px 0px;
+    text-align: right;
+    
+
+}
+.big-card img{
+    width: 100%;
+}
+/*
+.big-card {
+    position: relative;
+    text-align: center;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}*/
+
+.small-card img{
+    width: 20%;
+}
+
