@@ -19,6 +19,7 @@ header {
     background-color: var(--primary-color);
     height: 70px;
     align-items: center;
+    
 }
 .name {
     display: flex;
@@ -26,12 +27,14 @@ header {
     background-color: var(--secondary-color);
     height: 55px;
     align-items: center;
+    
 }
 
 header h1 {
     font-size: 2.5em;
     padding: 0 10px 0 100px;
     color: var(--primary-color);
+    
 }
 
 header nav{
@@ -115,8 +118,63 @@ main {
 
 
 /*work styling*/
-
 .work {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px 0px 0px;
+}
+
+.work-image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    flex-wrap: wrap;
+    padding: 10px 75px 10px 30px;
+}
+
+.title-work {
+    border-right: 3px solid;
+    padding: 0px 10px 0px 0px;
+    text-align: right;
+}
+
+.bigcard-container {
+    width: 100%;
+    height: 50%;
+}
+
+.big-card {
+    width: 100%;
+    height: 100%;
+}
+
+.big-card img {
+    width: 100%;
+    height: 100%;
+    border: 7px solid black;
+    object-fit: cover;
+}
+
+.smallcard-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-card {
+    width: 50%;
+    height: 100%;
+}
+
+.small-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 7px solid black;
+}
+
+/* .work {
     display: flex;
     justify-content: flex-end;
     padding: 20px 0px 0px 0px;
@@ -162,10 +220,16 @@ main {
     padding-left: 26px;
     width: 25%;
     height: 10%;
+    
+    
 }
 
 .bigcard-title h3 {
-    font-size: 2.5em;
+    font-size: 2vw;
+}
+
+.bigcard-title p {
+    font-size: 1vw;
 }
 
 .small-card {
@@ -173,7 +237,7 @@ main {
     height: 25%;
     padding: 10px 0px 0px 0px;
     flex: initial;
-    
+    display: flex;
     position: relative;
     text-align: center; 
     flex-wrap: wrap;
@@ -191,13 +255,17 @@ main {
     bottom: 20px;
     background-color: var(--primary-color);
     padding-left: 26px;
-    width: 25%;
-    height: 10%;
+    width: 50%;
+    height: 20%;
 }
 
 .smallcard-title h3 {
-    font-size: 2.5em;
+    font-size: 2vw;
 }
+
+.smallcard-title p {
+    font-size: 1vw;
+} */
 /*work styling over*/
 
 /*contact me styling start*/
