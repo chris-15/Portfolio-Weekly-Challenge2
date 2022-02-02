@@ -16,7 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
     background-color: var(--primary-color);
     height: 75px;
     align-items: center;
@@ -280,12 +279,26 @@ main {
         height: 145px;  
     }
 
-    main h2 {
-        font-size: 25px;
+    header h1 {
+        font-size: 30px;
     }
+
+    main h2 {
+        font-size: 20px;
+    }
+    
     .contact-list ul li {
         font-size: 16px;
     }
     
-}
+    .bigcard-title {
+        padding-left: 0px;
+        font-size: 1.5vw;
+    }
 
+    .smallcard-title {
+        padding-left: 0px;
+        font-size: 1.25vw;
+    }
+    
+}
