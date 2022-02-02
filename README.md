@@ -2,7 +2,7 @@
 
 ## Description 
 
-The purpose of this week's challenge was to create a responsive Portfolio website to display our work to future employers.
+The purpose of this week's challenge was to create a responsive Portfolio website to display our work to future employers. This is a work in progress and is currently used a baseline so it can be updated to hold the true content of my work as I progress through the bootcamp.
 
 Below is a preview of the deployed application:
 
