@@ -15,15 +15,16 @@
 header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
     background-color: var(--primary-color);
-    height: 70px;
+    height: 75px;
     align-items: center;
     
 }
 .name {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     background-color: var(--secondary-color);
     height: 55px;
     align-items: center;
@@ -31,7 +32,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 40px;
     padding: 0 10px 0 100px;
     color: var(--primary-color);
     
@@ -43,6 +44,7 @@ header nav{
 header nav ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -55,7 +57,7 @@ header nav ul li a {
     color: var(--secondary-color);
     padding: 0 5px 2px 5px;
     border-bottom: 3px solid var(--secondary-color);   
-    font-size: 1.25em;
+    font-size: 20px;
 }
 /*end of nav styling*/
 
@@ -78,16 +80,12 @@ header nav ul li a {
 
 .hero .hero-text h2 {
     color: var(--primary-color);
-    font-size: 2.5em;
+    font-size: 40px;
 }
 /*end hero styling*/
 
 main h2 {
-    font-size: 3.125em;
-}
-
-main p {
-    font-size: 1em;
+    font-size: 50px;
 }
 
 main {
@@ -202,102 +200,16 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
+}
+/* pseudo class for hovering effect  */
+.big-card:hover img{
+    opacity: 0.4;
 }
 
-/* .work {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 0px 0px 0px;
-    
+.small-card:hover img {
+    opacity: .4;
 }
-
-.work-image-container {
-    display: flex;
-    padding: 0px 75px 10px 30px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 75%;    
-}
-
-.title-work {
-    border-right: 3px solid;
-    padding: 0px 10px 0px 0px;
-    text-align: right;
-    
-
-}
-.big-card {
-    width: 100%;
-    height: 50%;
-    flex: initial;
-    display: flex;   
-    position: relative;
-    text-align: center; 
-    flex-wrap: wrap;
-}   
-
-.big-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 7px solid black;
-} 
-
-.bigcard-title {
-    position: absolute;
-    bottom: 20px;
-    background-color: var(--primary-color);
-    padding-left: 26px;
-    width: 25%;
-    height: 10%;
-    
-    
-}
-
-.bigcard-title h3 {
-    font-size: 2vw;
-}
-
-.bigcard-title p {
-    font-size: 1vw;
-}
-
-.small-card {
-    width: 48%;
-    height: 25%;
-    padding: 10px 0px 0px 0px;
-    flex: initial;
-    display: flex;
-    position: relative;
-    text-align: center; 
-    flex-wrap: wrap;
-}
-
-.small-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 7px solid black;
-}
-
-.smallcard-title {
-    position: absolute;
-    bottom: 20px;
-    background-color: var(--primary-color);
-    padding-left: 26px;
-    width: 50%;
-    height: 20%;
-}
-
-.smallcard-title h3 {
-    font-size: 2vw;
-}
-
-.smallcard-title p {
-    font-size: 1vw;
-} */
-/*work styling over*/
 
 /*contact me styling start*/
 .contact-me {
@@ -330,5 +242,50 @@ main {
 .contact-list ul li {
     border-bottom: 3px solid var(--secondary-color); 
     padding-bottom: 2px;
-    font-size: 1.25em;
+    font-size: 20px;
 }
+
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width:980px){
+    header {
+        justify-content: center;
+        height: 110px;  
+    }
+
+    .name {
+        width: 100%;
+        text-align: center;
+    }
+    header h1 {
+        
+        padding: 0 10px 0 0px;
+    }
+    
+    header nav {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    main h2 {
+        font-size: 40px;
+    }
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width:575px) {
+    header {
+        height: 145px;  
+    }
+
+    main h2 {
+        font-size: 25px;
+    }
+    .contact-list ul li {
+        font-size: 16px;
+    }
+    
+}
+
