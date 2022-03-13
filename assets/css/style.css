@@ -162,8 +162,12 @@ main {
     padding-left: 26px;
     margin-left: 7px;
     width: 25%;
-    height: 25%;
+    height: 30%;
     font-size: 1.5vw;
+}
+
+.bigcard-title h4 {
+    color:#21D19F ;
 }
 
 .smallcard-container{
@@ -200,6 +204,10 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 1.25vw;
+}
+
+.smallcard-title h4 {
+    color:#21D19F ;
 }
 /* pseudo class for hovering effect  */
 .big-card:hover img{
@@ -244,61 +252,134 @@ main {
     font-size: 20px;
 }
 
+.contact-list a {
+    color: inherit;
+}
+
+.contact-list a:link {
+    text-decoration: none;
+}
+
 /*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width:980px){
+@media screen and (max-width: 1045px) {
     header {
         justify-content: center;
-        height: 110px;  
+        height: 125px;
     }
 
-    .name {
-        width: 100%;
-        text-align: center;
-    }
     header h1 {
-        
-        padding: 0 10px 0 0px;
+        padding: 0;
+    }
+
+    #header-nav {
+        margin: 0;
     }
     
-    header nav {
-        justify-content: center;
-        width: 100%;
-    }
 }
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    main h2 {
-        font-size: 40px;
+
+    .about-me {
+        display: block;
+        padding: 0;
+        flex-wrap: wrap;
     }
+
+    .title-aboutme {
+        display: flex;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 3px solid; 
+    }
+
+    .text-aboutme {
+        display: flex;
+        justify-self: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .work {
+        display: block;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .title-work {
+        display: flex;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 3px solid; 
+    }
+
+    .work-image-container {
+        width: 100%;
+        padding: 10px 30px;
+        display: block;
+    }
+
+    .bigcard-title {
+        height: 15%;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .smallcard-container {
+        height: auto;
+        display: block;
+    }
+
+    .small-card {
+        width: 100%;
+    }
+
+    .smallcard-title {
+        height: 15%;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .contact-me {
+        display: block;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .title-contact {
+        display: flex;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 3px solid; 
+    }
+
+    .contact-list {
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+
+   
 }
 
 /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width:575px) {
+  
     header {
-        height: 145px;  
+        height: 200px;
+    }
+    .name {
+        display: flex;
+        height: 100px;
+        align-items: center;
     }
 
-    header h1 {
-        font-size: 30px;
-    }
-
-    main h2 {
-        font-size: 20px;
-    }
-    
-    .contact-list ul li {
-        font-size: 16px;
-    }
-    
     .bigcard-title {
-        padding-left: 0px;
-        font-size: 1.5vw;
+        height: 35%;
     }
 
     .smallcard-title {
-        padding-left: 0px;
-        font-size: 1.25vw;
+        height: 35%;
     }
-    
 }
